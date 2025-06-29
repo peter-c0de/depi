@@ -1,6 +1,6 @@
 Repository:
-https://github.com/peter-c0de/frontend-mentor-challenges
+https://github.com/peter-c0de/depi
 
 Page:
-https://peter-c0de.github.io/frontend-mentor-challenges
+https://peter-c0de.github.io/depi/
 
