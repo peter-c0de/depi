@@ -1,0 +1,28 @@
+nav {
+    text-align: center;
+}
+
+a {
+    font-size: 30px;
+}
+
+#current {
+    background-color: yellow;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    background-color: red;
+}
+
+h2 {
+    display: inline-block;
+    width: 300px;
+    color: white;
+    background-color: green;
+}
+
+footer p {
+    text-align: center;
+}
