@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+
+    <title>DEPI</title>
+  </head>
+  <body>
+    <div class="container">
+
+      <h1 class="mt-4">DEPI</h1>
+
+      <h2 class="mt-4">Repository</h2>
+      <div class="mb-3 d-flex w-100">
+        <ul class="list-group flex-fill me-2 mb-0">
+          <li class="list-group-item py-2 px-3">
+            <a href="https://github.com/peter-c0de/frontend-mentor-challenges" target="_blank">https://github.com/peter-c0de/frontend-mentor-challenges</a>
+          </li>
+        </ul>
+        <button type="button" class="btn btn-secondary" onclick="repo_link()">Copy</button>
+      </div>
+
+      <h2 class="mt-4">Page</h2>
+      <div class="mb-3 d-flex w-100">
+        <ul class="list-group flex-fill me-2 mb-0">
+          <li class="list-group-item py-2 px-3">
+            <a href="https://peter-c0de.github.io/frontend-mentor-challenges" target="_blank">
+              https://peter-c0de.github.io/frontend-mentor-challenges
+            </a>
+          </li>
+        </ul>
+        <button type="button" class="btn btn-secondary" onclick="page_link()">Copy</button>
+      </div>
+
+      <h2 class="mt-4">Basic Challenges</h2>
+      <table class="table table-striped">
+        <thead>
+        <tr>
+          <th scope="col">Date</th>
+          <th scope="col">Lecture</th>
+          <th scope="col">Assignment</th>
+          <th scope="col">Link</th>
+        </tr>
+        </thead>
+        <tbody>
+        
+        <!-- Lecture 01 -->
+        <tr>
+          <td>June 29, 2025</td>
+          <td>Lecture 01 - HTML</td>
+          <td>L01A01</td>
+          <td><a href="https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H" target="_blank">Link</a></td>
+        </tr>
+
+        <!-- Lecture 02 -->
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td><a href="#" target="_blank">Link</a></td>
+        </tr>
+
+        </tbody>
+      </table>
+        
+
+
+      <!-- Don't go past here -->
+    </div>
+    <div style="margin-top: 350px"></div>
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+      function repo_link(){
+        navigator.clipboard.writeText("https://github.com/peter-c0de/frontend-mentor-challenges");
+      }
+      function page_link(){
+        navigator.clipboard.writeText("https://peter-c0de.github.io/frontend-mentor-challenges");
+      }
+    </script>
+  </body>
+</html>
