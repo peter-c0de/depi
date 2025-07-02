@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+
+    <title>DEPI</title>
+  </head>
+  <body>
+    <div class="container">
+
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">DEPI</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="softskills.html">Soft Skills</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="technical.html">Technical</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-dark" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+      <h2 class="mt-4">Soft Skills</h2>
+      <table class="table table-striped">
+        <thead>
+        <tr>
+          <th scope="col">Date</th>
+          <th scope="col">Lecture</th>
+          <th scope="col">File</th>
+          <th scope="col">Link</th>
+        </tr>
+        </thead>
+        <tbody>
+        
+        <!-- Lecture 01 -->
+        <tr>
+          <td>July 1, 2025</td>
+          <td>1. Career Planning</td>
+          <td>01 Career Planning - DEPI RD3.pptx</td>
+          <td><a href="softskills/L01/01 Career Planning - DEPI RD3.pptx" target="_blank">Link</a></td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td></td>
+          <td>Career_Planning_Action_Plans_Clean.pdf</td>
+          <td><a href="softskills/L01/Career_Planning_Action_Plans_Clean.pdf" target="_blank">Link</a></td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td></td>
+          <td>Glassdoor</td>
+          <td><a href="https://www.glassdoor.com/index.htm" target="_blank">Link</a></td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td></td>
+          <td>RIASEC</td>
+          <td><a href="https://careerexplorer.hawaii.edu/assessments/riasec_multiLang.php" target="_blank">Link</a></td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td></td>
+          <td>16 Personalities</td>
+          <td><a href="https://www.16personalities.com" target="_blank">Link</a></td>
+        </tr>
+
+        <!-- Lecture 02 -->
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td><a href="#" target="_blank">Link</a></td>
+        </tr>
+
+        </tbody>
+      </table>
+
+
+      <!-- Don't go past here -->
+    </div>
+    <div style="margin-top: 350px"></div>
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+      function repo_link(){
+        navigator.clipboard.writeText("https://github.com/peter-c0de/depi");
+      }
+      function page_link(){
+        navigator.clipboard.writeText("https://peter-c0de.github.io/depi/");
+      }
+    </script>
+  </body>
+</html>
