@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <title>HTML Canvas Task: Bar Chart</title>
+  </head>
+  <body>
+    <main class="container">
+      <!-- <div class="row text-center"> -->
+      <div class="text-center">
+        <!-- Task: Canvas Graphics Task -->
+        <h3 class="my-3">Canvas Graphics: Bar Chart</h3>
+
+        <canvas
+          id="barCanvas"
+          width="700"
+          height="300"
+          class="d-inline-block"
+          style="border: 1px solid #000; max-width: 100%; height: auto"
+        ></canvas>
+
+        <!-- <div class="d-flex my-3"> -->
+        <div class="w-50 mx-auto my-3">
+          <input
+            class="form-control my-1"
+            type="text"
+            id="dataInput"
+            placeholder="Example: 10, 30, 70, 100"
+          />
+          <input
+            class="form-control my-1"
+            type="text"
+            id="colorInput"
+            value="red"
+          />
+          <button class="btn btn-secondary" onclick="drawChart()">
+            Draw Chart
+          </button>
+        </div>
+      </div>
+
+      <!-- Don't go past here -->
+    </main>
+    <div style="margin-top: 350px"></div>
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+      function drawChart() {
+        const canvas = document.getElementById("barCanvas");
+        const ctx = canvas.getContext("2d");
+
+        // Clear
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        // Get the inputs from the "dataInput"
+        const input = document.getElementById("dataInput").value;
+        const values = input.split(",");
+
+        // Drawing
+        let x = 20;
+        const barWidth = 40;
+
+        for (let i = 0; i < values.length; i++) {
+          const value = parseInt(values[i]);
+
+          // Color
+          // ctx.fillStyle = "red";
+          let color = document.getElementById("colorInput").value;
+          ctx.fillStyle = color;
+          // ctx.fillRect(x, canvas.height - value, barWidth, value);
+          ctx.fillRect(x, canvas.height - value, barWidth, value);
+
+          // Writing Numbers
+          ctx.fillStyle = "black";
+          ctx.fillText(value, x + 10, canvas.height - value - 5);
+
+          // Move to right
+          x += barWidth + 20;
+        }
+      }
+    </script>
+  </body>
+</html>
