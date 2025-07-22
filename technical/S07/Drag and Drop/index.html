@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/img/favicon.jpg"
+    />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <title>Task2</title>
+    <style>
+      .task {
+        text-align: center;
+        color: red;
+        background-color: lightblue;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row text-center">
+        <!-- Task: Drag and Drop Task Manager -->
+        <h3 class="my-3">Drag and Drop Task Manager</h3>
+        <div class="d-flex my-3">
+          <input
+            class="form-control mx-1"
+            type="text"
+            id="inputTask"
+            placeholder="Enter a new task"
+          />
+          <button class="btn btn-secondary" onclick="addTask()">
+            Add Task
+          </button>
+        </div>
+      </div>
+
+      <div class="row text-center">
+        <!-- <div id="toDoBox" class="col-3 ms-2 mb-5 border" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)"> -->
+        <div
+          id="toDoBox"
+          class="col text-center border mb-5"
+          ondrop="dropHandler(event)"
+          ondragover="dragoverHandler(event)"
+        >
+          <h3 class="text-center my-3">To do</h3>
+          <!-- <div id="toDoTask" class="task" draggable="true" ondragstart="dragstartHandler(event)">1</div><br />
+                    <div class="task">2</div><br />
+                    <div class="task">3</div><br /> -->
+        </div>
+        <!-- <div id="inProgressBox" class="col-3 ms-2 mb-5 border" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)"> -->
+        <div
+          id="inProgressBox"
+          class="col text-center border mb-5"
+          ondrop="dropHandler(event)"
+          ondragover="dragoverHandler(event)"
+        >
+          <h3 class="text-center my-3">In Progress</h3>
+        </div>
+        <!-- <div id="doneBox" class="col-3 ms-2 mb-5 border" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)"> -->
+        <div
+          id="doneBox"
+          class="col text-center border mb-5"
+          ondrop="dropHandler(event)"
+          ondragover="dragoverHandler(event)"
+        >
+          <h3 class="text-center my-3">Done</h3>
+        </div>
+      </div>
+
+      <!-- Don't go past here -->
+    </div>
+    <div style="margin-top: 350px"></div>
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
