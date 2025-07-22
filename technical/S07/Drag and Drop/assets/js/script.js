@@ -1,3 +1,4 @@
+// Onload
 window.onload = function () {
     loadData();
 };
@@ -7,15 +8,8 @@ function loadData() {
 
     if (savedData) {
         const data = JSON.parse(savedData);
-
-        // Clear existing columns
-        ["toDoBox", "inProgressBox", "doneBox"].forEach(id => {
-            const column = document.getElementById(id);
-            const tasks = column.querySelectorAll(".task");
-            tasks.forEach(task => task.remove());
-        });
-
-        taskCounter = 0; // Reset counter before loading
+        columnsData = data;
+        taskCounter = 0;
 
         // Helper to create tasks
         function createTask(content, parentId) {
@@ -29,9 +23,17 @@ function loadData() {
             taskCounter++;
         }
 
-        data.todo.forEach(taskText => createTask(taskText, "toDoBox"));
-        data.inProgress.forEach(taskText => createTask(taskText, "inProgressBox"));
-        data.done.forEach(taskText => createTask(taskText, "doneBox"));
+        columnsData.todo.forEach( function(task) {
+            createTask(task, "toDoBox");
+        });
+
+        columnsData.inProgress.forEach( function(task) {
+            createTask(task, "inProgressBox");
+        });
+
+        columnsData.done.forEach( function(task) {
+            createTask(task, "doneBox");
+        });
     }
 }
 
@@ -81,6 +83,7 @@ function saveData()
         columnsData.done.push(task.innerHTML);
     });
 
+
     window.localStorage.setItem("task-manager-data", JSON.stringify(columnsData));
 }
 
@@ -105,4 +108,13 @@ function addTask()
     }
 
     document.getElementById('inputTask').value = "";
+    saveData();
+}
+
+
+// Reference: https://www.w3schools.com/jsref/met_storage_clear.asp
+function clearTasks()
+{
+    localStorage.clear(); // Empty the localStorage
+    location.reload(); // Refreshes the page
 }
