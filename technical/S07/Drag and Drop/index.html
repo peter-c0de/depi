@@ -33,14 +33,16 @@
             id="inputTask"
             placeholder="Enter a new task"
           />
-          <button class="btn btn-secondary" onclick="addTask()">
+          <button class="mx-1 btn btn-secondary" onclick="addTask()">
             Add Task
+          </button>
+          <button class="mx-1 btn btn-secondary" onclick="clearTasks()">
+            Clear Tasks
           </button>
         </div>
       </div>
 
       <div class="row text-center">
-        <!-- <div id="toDoBox" class="col-3 ms-2 mb-5 border" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)"> -->
         <div
           id="toDoBox"
           class="col text-center border mb-5"
@@ -48,11 +50,7 @@
           ondragover="dragoverHandler(event)"
         >
           <h3 class="text-center my-3">To do</h3>
-          <!-- <div id="toDoTask" class="task" draggable="true" ondragstart="dragstartHandler(event)">1</div><br />
-                    <div class="task">2</div><br />
-                    <div class="task">3</div><br /> -->
         </div>
-        <!-- <div id="inProgressBox" class="col-3 ms-2 mb-5 border" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)"> -->
         <div
           id="inProgressBox"
           class="col text-center border mb-5"
@@ -61,7 +59,6 @@
         >
           <h3 class="text-center my-3">In Progress</h3>
         </div>
-        <!-- <div id="doneBox" class="col-3 ms-2 mb-5 border" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)"> -->
         <div
           id="doneBox"
           class="col text-center border mb-5"
