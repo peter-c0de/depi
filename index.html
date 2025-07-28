@@ -5,7 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/img/favicon-32x32.png"
+    />
 
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
 
@@ -13,38 +18,55 @@
   </head>
   <body>
     <div class="container">
-
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html">DEPI</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="next_academy.html">Next Academy</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="instructors.html">Instructors</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="softskills.html">Soft Skills</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="technical.html">Technical</a>
-                </li>
-              </ul>
-              <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-dark" type="submit">Search</button>
-              </form>
-            </div>
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >DEPI</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="next_academy.html">Next Academy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="schedules.html">Schedules</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="instructors.html">Instructors</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="softskills.html">Soft Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="technical.html">Technical</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-dark" type="submit">Search</button>
+            </form>
           </div>
-        </nav>
+        </div>
+      </nav>
 
       <h1 class="mt-4 text-center">DEPI</h1>
 
@@ -57,7 +79,9 @@
             </a>
           </li>
         </ul>
-        <button type="button" class="btn btn-secondary" onclick="depi_link()">Copy</button>
+        <button type="button" class="btn btn-secondary" onclick="depi_link()">
+          Copy
+        </button>
       </div>
 
       <h2 class="mt-4">DEPI's Facebook Page</h2>
@@ -69,29 +93,48 @@
             </a>
           </li>
         </ul>
-        <button type="button" class="btn btn-secondary" onclick="facebook_page()">Copy</button>
+        <button
+          type="button"
+          class="btn btn-secondary"
+          onclick="facebook_page()"
+        >
+          Copy
+        </button>
       </div>
 
       <h2 class="mt-4">DEPI's Facebook Group</h2>
       <div class="mb-3 d-flex w-100">
         <ul class="list-group flex-fill me-2 mb-0">
           <li class="list-group-item py-2 px-3">
-            <a href="https://www.facebook.com/groups/6767271016655109" target="_blank">
+            <a
+              href="https://www.facebook.com/groups/6767271016655109"
+              target="_blank"
+            >
               https://www.facebook.com/groups/6767271016655109
             </a>
           </li>
         </ul>
-        <button type="button" class="btn btn-secondary" onclick="facebook_group()">Copy</button>
+        <button
+          type="button"
+          class="btn btn-secondary"
+          onclick="facebook_group()"
+        >
+          Copy
+        </button>
       </div>
 
       <h2 class="mt-4">My DEPI Repository</h2>
       <div class="mb-3 d-flex w-100">
         <ul class="list-group flex-fill me-2 mb-0">
           <li class="list-group-item py-2 px-3">
-            <a href="https://github.com/peter-c0de/depi" target="_blank">https://github.com/peter-c0de/depi</a>
+            <a href="https://github.com/peter-c0de/depi" target="_blank"
+              >https://github.com/peter-c0de/depi</a
+            >
           </li>
         </ul>
-        <button type="button" class="btn btn-secondary" onclick="repo_link()">Copy</button>
+        <button type="button" class="btn btn-secondary" onclick="repo_link()">
+          Copy
+        </button>
       </div>
 
       <h2 class="mt-4">My DEPI Page</h2>
@@ -103,7 +146,9 @@
             </a>
           </li>
         </ul>
-        <button type="button" class="btn btn-secondary" onclick="page_link()">Copy</button>
+        <button type="button" class="btn btn-secondary" onclick="page_link()">
+          Copy
+        </button>
       </div>
 
       <!-- Don't go past here -->
@@ -112,19 +157,21 @@
 
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script>
-      function depi_link(){
+      function depi_link() {
         navigator.clipboard.writeText("https://depi.gov.eg");
       }
-      function facebook_page(){
+      function facebook_page() {
         navigator.clipboard.writeText("https://www.facebook.com/depi.gov.eg");
       }
-      function facebook_group(){
-        navigator.clipboard.writeText("https://www.facebook.com/groups/6767271016655109");
+      function facebook_group() {
+        navigator.clipboard.writeText(
+          "https://www.facebook.com/groups/6767271016655109"
+        );
       }
-      function repo_link(){
+      function repo_link() {
         navigator.clipboard.writeText("https://github.com/peter-c0de/depi");
       }
-      function page_link(){
+      function page_link() {
         navigator.clipboard.writeText("https://peter-c0de.github.io/depi/");
       }
     </script>
