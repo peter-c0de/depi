@@ -1,0 +1,151 @@
+@import url('./fonts.css');
+
+/* Reset Config */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+header nav ul {
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+    font-family: "Oswald-Regular", sans-serif;
+    padding: 20px;
+    margin: 20px;
+    list-style-type: none;
+}
+
+header nav ul li {
+    width: 30%;
+}
+
+/* Main */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+}
+
+/* General Section Styles */
+.section-title,
+.section-contact,
+.section-skills,
+.section-languages,
+.about-me,
+.section-profile,
+.section-work-experience,
+.section-education {
+    padding-inline-start: 50px;
+}
+
+.section-title,
+.section-contact,
+.section-skills,
+.section-languages,
+.section-profile,
+.section-work-experience,
+.section-education {
+    padding-block: 10px;
+}
+
+.section-title > h1 {
+    font-size: 3rem;
+    color: green;
+}
+
+.section-title > h2,
+.section-contact > h2,
+.section-skills > h2,
+.section-languages > h2,
+.section-profile > h2,
+.section-work-experience > h2,
+.section-education > h2 {
+    font-size: 2rem;
+    padding-block: 5px;
+}
+
+.section-contact > p,
+.section-skills > ul,
+.section-languages > ul,
+.section-profile > p,
+.section-work-experience > ul,
+.section-education > p {
+    font-size: 20px;
+}
+
+/* ////////////////////////////////////////////////// Contact */
+.contact {
+    padding-block: 50px;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    flex: 1 1 35%;
+}
+
+/* Section: Image */
+.section-img {
+    display: flex;
+    justify-content: center;
+}
+
+.section-img img {
+    border-radius: 15%;
+    width: 50%;
+}
+
+.section-contact a {
+    text-decoration: underline;
+    color: white;
+}
+
+/* ////////////////////////////////////////////////// About Me */
+.about-me {
+    padding-block: 50px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 65%;
+}
+
+.about-me h2 {
+    padding-block: 20px;
+}
+
+.section-skills > ul,
+.section-languages > ul,
+.section-work-experience > ul {
+    padding-inline: 40px;
+}
+
+/* ////////////////////////////////////////////////// Certifications */
+.certifications {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.certifications > h2 {
+    font-size: 3rem;
+}
+
+.certifications img {
+    margin-block: 20px;
+}
+
+/* ////////////////////////////////////////////////// Footer */
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer > p {
+    margin: 20px;
+    font-size: 2rem;
+}
+
+
+
